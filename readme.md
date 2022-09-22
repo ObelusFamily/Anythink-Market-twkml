@@ -10,4 +10,19 @@ When implementing a new feature or fixing a bug, please create a new pull reques
 
 ## First setup
 
-**[TODO 05/01/2018 @vanessa-cooper]:** _It's been a while since anyone ran a fresh copy of this repo. I think it's worth documenting the steps needed to install and run the repo on a new machine?_
+Steps to initial setup:
+1. Clone the repo 
+2. Change directory into the root of your working copy
+3. Ensure `docker` and `docker-compose` are installed correctly
+```
+$  docker -v
+Docker version 20.10.17, build 100c70
+$ docker-compose -v
+docker-compose version 1.29.2, build 5becea4c
+```
+_Your version numbers may differ_
+4. (Windows & Mac) Ensure Docker desktop is running on your machine
+5. Run the back and front-end servers: `docker-compose up`
+
+Step 4 is crucial. You will receive inexplicable error messages if docker desktop is NOT running.
+
